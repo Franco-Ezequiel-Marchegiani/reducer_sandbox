@@ -6,7 +6,7 @@ import { counterSlice } from '../reducers/contadorSlice';
 const store = configureStore({
     reducer:{
         //contador: contadorReducer,
-        contador: counterSlice,
+        contador: counterSlice.reducer,
 
     }
 })
