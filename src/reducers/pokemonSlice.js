@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAction, createSlice } from "@reduxjs/toolkit";
 /* 
 const initialState = {
     page: 0,
@@ -32,3 +32,6 @@ export const pokemonSlice = createSlice({
 })
 
 export const {loadingPokemons, fetchPokemons, failedFetch} = pokemonSlice.actions
+
+
+export const fetchingPokemons = createAction('pokemon/fetchingPokemons')
